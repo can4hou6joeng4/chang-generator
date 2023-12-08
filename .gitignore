@@ -1,4 +1,5 @@
 ### Custom template
+.gitignore
 .idea
 chang-generator.iml
 chang-generator-basic.iml
