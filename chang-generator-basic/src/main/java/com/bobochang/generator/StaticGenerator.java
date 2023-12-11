@@ -25,7 +25,7 @@ public class StaticGenerator {
 
         copyFilesByHutool(inputPath, outputPath);
 
-        copyFilesByRecursive(inputPath,outputPath);
+        //copyFilesByRecursive(inputPath,outputPath);
     }
 
     /**
