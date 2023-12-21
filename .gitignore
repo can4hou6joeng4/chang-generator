@@ -31,7 +31,6 @@ hs_err_pid*
 replay_pid*
 
 ### Maven template
-target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -48,5 +47,3 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
-
-!/chang-generator-demo-projects/

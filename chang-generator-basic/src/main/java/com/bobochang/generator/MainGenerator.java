@@ -21,7 +21,7 @@ public class MainGenerator {
         doGenerate(mainTemplateConfig);
     }
 
-    private static void doGenerate(Object model) throws IOException, TemplateException {
+    public static void doGenerate(Object model) throws IOException, TemplateException {
         // 1 生成静态文件
         // 获取当前打开项目的根路径
         String projectPath = System.getProperty("user.dir");
