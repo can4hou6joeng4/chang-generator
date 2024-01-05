@@ -1,0 +1,9 @@
+/Users/bobochang/Documents/PROJECTS/chang-generator/chang-generator-basic/src/main/java/com/bobochang/cli/command/ListCommand.java
+/Users/bobochang/Documents/PROJECTS/chang-generator/chang-generator-basic/src/main/java/com/bobochang/cli/command/GenerateCommand.java
+/Users/bobochang/Documents/PROJECTS/chang-generator/chang-generator-basic/src/main/java/com/bobochang/generator/MainGenerator.java
+/Users/bobochang/Documents/PROJECTS/chang-generator/chang-generator-basic/src/main/java/com/bobochang/model/MainTemplateConfig.java
+/Users/bobochang/Documents/PROJECTS/chang-generator/chang-generator-basic/src/main/java/com/bobochang/Main.java
+/Users/bobochang/Documents/PROJECTS/chang-generator/chang-generator-basic/src/main/java/com/bobochang/cli/command/ConfigCommand.java
+/Users/bobochang/Documents/PROJECTS/chang-generator/chang-generator-basic/src/main/java/com/bobochang/cli/CommandExecutor.java
+/Users/bobochang/Documents/PROJECTS/chang-generator/chang-generator-basic/src/main/java/com/bobochang/generator/DynamicGenerator.java
+/Users/bobochang/Documents/PROJECTS/chang-generator/chang-generator-basic/src/main/java/com/bobochang/generator/StaticGenerator.java
