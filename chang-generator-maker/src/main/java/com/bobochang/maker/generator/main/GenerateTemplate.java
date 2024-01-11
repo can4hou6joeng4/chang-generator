@@ -49,7 +49,7 @@ public abstract class GenerateTemplate {
      * @param outputPath
      * @return
      */
-    protected static String copySource(Meta meta, String outputPath) {
+    protected String copySource(Meta meta, String outputPath) {
         String sourceRootPath = meta.getFileConfig().getSourceRootPath();
         String sourceCopyDestPath = outputPath + File.separator + ".source";
         FileUtil.copy(sourceRootPath, sourceCopyDestPath, false);
@@ -64,7 +64,7 @@ public abstract class GenerateTemplate {
      * @throws IOException
      * @throws TemplateException
      */
-    protected static void generateCode(Meta meta, String outputPath) throws IOException, TemplateException {
+    protected void generateCode(Meta meta, String outputPath) throws IOException, TemplateException {
         // 获取模板文件
         String inputFilePath;
         String outputFilePath;
@@ -130,7 +130,7 @@ public abstract class GenerateTemplate {
      * @throws IOException
      * @throws InterruptedException
      */
-    protected static String buildJar(String outputPath, Meta meta) throws IOException, InterruptedException {
+    protected String buildJar(String outputPath, Meta meta) throws IOException, InterruptedException {
         // 构建 jar 包
         JarGenerator.doGenerate(outputPath);
         String jarName = String.format("%s-%s-jar-with-dependencies.jar", meta.getName(), meta.getVersion());
@@ -146,7 +146,7 @@ public abstract class GenerateTemplate {
      * @return
      * @throws IOException
      */
-    protected static String buildScript(String outputPath, String jarPath) throws IOException {
+    protected String buildScript(String outputPath, String jarPath) throws IOException {
         // 构建脚本
         String shellOutputPath = outputPath + File.separator + "generator";
         ScriptGenerator.doGenerate(shellOutputPath, jarPath);
@@ -161,7 +161,7 @@ public abstract class GenerateTemplate {
      * @param shellOutputPath
      * @param sourceCopyDestPath
      */
-    protected static void buildDist(String outputPath, String jarPath, String shellOutputPath, String sourceCopyDestPath) {
+    protected void buildDist(String outputPath, String jarPath, String shellOutputPath, String sourceCopyDestPath) {
         // 生成精简版 -dist
         String distOutputPath = outputPath + "-dist";
         // 拷贝 jar 包

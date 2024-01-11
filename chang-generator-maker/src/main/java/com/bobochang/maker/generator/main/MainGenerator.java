@@ -10,8 +10,8 @@ import java.io.IOException;
  * @Date 2024/1/4 - 09:59
  */
 public class MainGenerator extends GenerateTemplate {
-    public static void main(String[] args) throws TemplateException, IOException, InterruptedException {
-        MainGenerator mainGenerator = new MainGenerator();
-        mainGenerator.doGenerate();
+    @Override
+    protected void buildDist(String outputPath, String jarPath, String shellOutputPath, String sourceCopyDestPath) {
+        System.out.println("不要给我输出dist");
     }
 }

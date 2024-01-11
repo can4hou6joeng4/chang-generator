@@ -10,7 +10,6 @@ import com.bobochang.maker.meta.enums.ModelTypeEnum;
 
 import java.io.File;
 import java.nio.file.Paths;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -125,10 +124,10 @@ public class MetaValidator {
         String version = StrUtil.emptyToDefault(meta.getVersion(), "1.0");
         String createTime = StrUtil.emptyToDefault(meta.getCreateTime(), DateUtil.now());
         meta.setName(name);
-        meta.setName(description);
-        meta.setName(author);
-        meta.setName(basePackage);
-        meta.setName(version);
-        meta.setName(createTime);
+        meta.setDescription(description);
+        meta.setAuthor(author);
+        meta.setBasePackage(basePackage);
+        meta.setVersion(version);
+        meta.setCreateTime(createTime);
     }
 }
