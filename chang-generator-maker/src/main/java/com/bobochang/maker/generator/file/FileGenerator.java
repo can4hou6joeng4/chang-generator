@@ -14,14 +14,14 @@ import java.io.IOException;
 public class FileGenerator {
 
     public static void main(String[] args) throws TemplateException, IOException {
-        DataModel mainTemplateConfig = new DataModel();
-        mainTemplateConfig.setAuthor("bobochang");
-        mainTemplateConfig.setOutputText("this is first outputText");
-        mainTemplateConfig.setLoop(true);
-        doGenerate(mainTemplateConfig);
+        DataModel dataModel = new DataModel();
+        dataModel.setAuthor("bobochang");
+        dataModel.setOutputText("this is first outputText");
+        dataModel.setLoop(true);
+        doGenerate(dataModel);
     }
 
-    public static void doGenerate(Object model) throws IOException, TemplateException {
+    public static void doGenerate(DataModel model) throws IOException, TemplateException {
         // 1 生成静态文件
         // 获取当前打开项目的根路径
         String projectPath = System.getProperty("user.dir");

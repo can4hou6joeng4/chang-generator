@@ -10,7 +10,9 @@ import com.bobochang.maker.meta.enums.ModelTypeEnum;
 
 import java.io.File;
 import java.nio.file.Paths;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author bobochang
@@ -38,6 +40,16 @@ public class MetaValidator {
             return;
         }
         for (Meta.ModelConfig.ModelsInfo modelsInfo : modelsInfoList) {
+            // 当存在 groupKey 时无需检验 fieldName
+            if (StrUtil.isNotEmpty(modelsInfo.getGroupKey())) {
+                // 设置中间参数
+                List<Meta.ModelConfig.ModelsInfo> subModelInfoList = modelsInfo.getModels();
+                String allArgsStr = subModelInfoList.stream()
+                        .map(subModelInfo -> String.format("\"--%s\"", subModelInfo.getFieldName()))
+                        .collect(Collectors.joining(", "));
+                modelsInfo.setAllArgsStr(allArgsStr);
+                continue;
+            }
             String fieldName = modelsInfo.getFieldName();
             if (StrUtil.isBlank(fieldName)) {
                 throw new MetaException("未填写 fieldName");
@@ -84,6 +96,12 @@ public class MetaValidator {
             return;
         }
         for (Meta.FileConfig.FileInfo fileInfo : fileInfoList) {
+            // 获取类型
+            String fileInfoType = fileInfo.getType();
+            // 如果类型为 group，则不需要填写 inputPath
+            if (FileTypeEnum.GROUP.getValue().equals(fileInfoType)) {
+                continue;
+            }
             // inputPath：必填
             String inputPath = fileInfo.getInputPath();
             if (StrUtil.isBlank(inputPath)) {
