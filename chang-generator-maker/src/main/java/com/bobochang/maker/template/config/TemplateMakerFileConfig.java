@@ -11,14 +11,24 @@ import java.util.List;
  * @Date 2024/1/19 - 11:05
  */
 @Data
-public class TemplateMakeFileConfig {
+public class TemplateMakerFileConfig {
 
     private List<FileInfoConfig> file;
+
+    private FileGroupConfig fileGroupConfig;
 
     @Data
     @NoArgsConstructor
     public static class FileInfoConfig {
         private String path;
         private List<FileFilterConfig> filterConfigList;
+    }
+
+    @Data
+    @NoArgsConstructor
+    public static class FileGroupConfig {
+        private String condition;
+        private String groupKey;
+        private String groupName;
     }
 }
