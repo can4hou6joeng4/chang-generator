@@ -58,10 +58,10 @@ public class Meta {
             private String description;
             private Object defaultValue;
             private String abbr;
-            private String condition;
             private String groupKey;
             private String groupName;
             private List<ModelsInfo> models;
+            private String condition;
 
             // 其他中间参数
             private String allArgsStr;

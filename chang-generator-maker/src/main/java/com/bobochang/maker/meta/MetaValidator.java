@@ -87,7 +87,7 @@ public class MetaValidator {
         // fileType 默认值：dir
         String fileType = fileConfig.getType();
         String defaultFileType = FileTypeEnum.DIR.getValue();
-        if (fileType.isEmpty()) {
+        if (StrUtil.isEmpty(fileType)) {
             fileConfig.setType(defaultFileType);
         }
         // fileInfo 默认值

@@ -13,7 +13,7 @@ import java.util.List;
 @Data
 public class TemplateMakerFileConfig {
 
-    private List<FileInfoConfig> file;
+    private List<FileInfoConfig> files;
 
     private FileGroupConfig fileGroupConfig;
 
@@ -21,6 +21,7 @@ public class TemplateMakerFileConfig {
     @NoArgsConstructor
     public static class FileInfoConfig {
         private String path;
+        private String condition;
         private List<FileFilterConfig> filterConfigList;
     }
 
@@ -30,5 +31,6 @@ public class TemplateMakerFileConfig {
         private String condition;
         private String groupKey;
         private String groupName;
+
     }
 }

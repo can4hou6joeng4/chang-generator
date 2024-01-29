@@ -13,7 +13,7 @@ import java.util.List;
 @Data
 public class TemplateMakerModelConfig {
 
-    private List<ModelInfoConfig> model;
+    private List<ModelInfoConfig> models;
 
     private ModelGroupConfig modelGroupConfig;
 
@@ -23,7 +23,7 @@ public class TemplateMakerModelConfig {
         private String fieldName;
         private String type;
         private String description;
-        private String defaultValue;
+        private Object defaultValue;
         private String abbr;
         // 用于替换文本的值
         private String replaceText;
@@ -35,5 +35,7 @@ public class TemplateMakerModelConfig {
         private String condition;
         private String groupKey;
         private String groupName;
+        private String type;
+        private String description;
     }
 }

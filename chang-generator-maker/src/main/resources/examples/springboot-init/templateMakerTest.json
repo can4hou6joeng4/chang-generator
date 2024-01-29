@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "meta": {
+    "name": "springboot-init-generator",
+    "description": "SpringBoot模板项目生成器"
+  },
+  "originProjectPath": "../../../chang-generator-demo-projects/springboot-init",
+  "fileConfig": {
+    "files": [
+      {
+        "path": "./"
+      }
+    ]
+  },
+  "modelConfig": {
+    "models": [
+      {
+        "fieldName": "baseResponse",
+        "type": "String",
+        "description": "基础包名",
+        "defaultValue": "com.bobochang",
+        "replaceText": "com.yupi"
+      }
+    ]
+  }
+}
