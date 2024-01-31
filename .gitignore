@@ -2,8 +2,9 @@
 .idea
 generated
 target
-chang-generator.iml
-chang-generator-basic.iml
+*.iml
+node_modules
+.gitignore
 
 ### Java template
 # Compiled class file
