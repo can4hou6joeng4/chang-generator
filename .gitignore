@@ -3,6 +3,8 @@
 generated
 target
 *.iml
+node_modules
+.gitignore
 
 ### Java template
 # Compiled class file
