@@ -11,7 +11,8 @@ import java.io.IOException;
  */
 public class MainGenerator extends GenerateTemplate {
     @Override
-    protected void buildDist(String outputPath, String jarPath, String shellOutputPath, String sourceCopyDestPath) {
+    protected String buildDist(String outputPath, String jarPath, String shellOutputPath, String sourceCopyDestPath) {
         System.out.println("不要给我输出dist");
+        return "";
     }
 }

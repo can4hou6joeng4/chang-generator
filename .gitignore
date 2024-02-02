@@ -5,6 +5,7 @@ target
 *.iml
 node_modules
 .gitignore
+application-local.yml
 
 ### Java template
 # Compiled class file

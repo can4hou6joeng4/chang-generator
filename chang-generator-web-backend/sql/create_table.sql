@@ -55,21 +55,21 @@ VALUES (2, 'bobochang', 'b0dd3697a192885d7c055db46155b26a', '普通啵啵肠',
 -- 模拟代码生成器数据
 INSERT INTO my_db.generator (id, name, description, basePackage, version, author, tags, picture, fileConfig,
                              modelConfig, distPath, status, userId)
-VALUES (1, 'ACM 模板项目', 'ACM 模板项目生成器', 'com.yupi', '1.0', '程序员啵啵肠', '["Java"]',
+VALUES (1, 'ACM 模板项目', 'ACM 模板项目生成器', 'com.bobochang', '1.0', '啵啵肠', '["Java"]',
         'https://pic.yupi.icu/1/_r0_c1851-bf115939332e.jpg', '{}', '{}', null, 0, 1);
 INSERT INTO my_db.generator (id, name, description, basePackage, version, author, tags, picture, fileConfig,
                              modelConfig, distPath, status, userId)
-VALUES (2, 'Spring Boot 初始化模板', 'Spring Boot 初始化模板项目生成器', 'com.yupi', '1.0', '程序员啵啵肠', '["Java"]',
+VALUES (2, 'Spring Boot 初始化模板', 'Spring Boot 初始化模板项目生成器', 'com.bobochang', '1.0', '啵啵肠', '["Java"]',
         'https://pic.yupi.icu/1/_r0_c0726-7e30f8db802a.jpg', '{}', '{}', null, 0, 1);
 INSERT INTO my_db.generator (id, name, description, basePackage, version, author, tags, picture, fileConfig,
                              modelConfig, distPath, status, userId)
-VALUES (3, '啵啵肠外卖', '啵啵肠外卖项目生成器', 'com.yupi', '1.0', '程序员啵啵肠', '["Java", "前端"]',
+VALUES (3, '啵啵肠外卖', '啵啵肠外卖项目生成器', 'com.bobochang', '1.0', '啵啵肠', '["Java", "前端"]',
         'https://pic.yupi.icu/1/_r1_c0cf7-f8e4bd865b4b.jpg', '{}', '{}', null, 0, 1);
 INSERT INTO my_db.generator (id, name, description, basePackage, version, author, tags, picture, fileConfig,
                              modelConfig, distPath, status, userId)
-VALUES (4, '啵啵肠用户中心', '啵啵肠用户中心项目生成器', 'com.yupi', '1.0', '程序员啵啵肠', '["Java", "前端"]',
+VALUES (4, '啵啵肠用户中心', '啵啵肠用户中心项目生成器', 'com.bobochang', '1.0', '啵啵肠', '["Java", "前端"]',
         'https://pic.yupi.icu/1/_r1_c1c15-79cdecf24aed.jpg', '{}', '{}', null, 0, 1);
 INSERT INTO my_db.generator (id, name, description, basePackage, version, author, tags, picture, fileConfig,
                              modelConfig, distPath, status, userId)
-VALUES (5, '啵啵肠商城', '啵啵肠商城项目生成器', 'com.yupi', '1.0', '程序员啵啵肠', '["Java", "前端"]',
+VALUES (5, '啵啵肠商城', '啵啵肠商城项目生成器', 'com.bobochang', '1.0', '啵啵肠', '["Java", "前端"]',
         'https://pic.yupi.icu/1/_r1_c0709-8e80689ac1da.jpg', '{}', '{}', null, 0, 1);

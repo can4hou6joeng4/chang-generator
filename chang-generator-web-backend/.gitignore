@@ -3,6 +3,7 @@
 
 HELP.md
 target/
+application-local.yml
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/

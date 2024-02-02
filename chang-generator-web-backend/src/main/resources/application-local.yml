@@ -2,9 +2,6 @@
 spring:
   application:
     name: chang-generator-web-backend
-  # 默认 dev 环境
-  profiles:
-    active: dev
   # 支持 swagger3
   mvc:
     pathmatch:
@@ -20,8 +17,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/my_db
-    username:
-    password:
+    username: root
+    password: Chy19990914
   # Redis 配置
   # todo 需替换配置，然后取消注释
   #  redis:
@@ -57,10 +54,10 @@ mybatis-plus:
 # todo 需替换配置
 cos:
   client:
-    accessKey: xxx
-    secretKey: xxx
-    region: xxx
-    bucket: xxx
+    accessKey: AKID9EHDCYyMrQmHvqJev8P8hv30qOxMbDj6
+    secretKey: TAiY7hJ2ufHqyALOXcgbO4dCgz7Tiw7M
+    region: ap-guangzhou
+    bucket: bobochang-1309945187
 # 接口文档配置
 knife4j:
   enable: true

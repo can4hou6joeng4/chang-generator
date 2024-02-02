@@ -4,6 +4,7 @@ package com.bobochang.maker.generator.main;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.resource.ClassPathResource;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.util.ZipUtil;
 import com.bobochang.maker.generator.JarGenerator;
 import com.bobochang.maker.generator.ScriptGenerator;
 import com.bobochang.maker.generator.file.DynamicFileGenerator;
@@ -157,7 +158,7 @@ public abstract class GenerateTemplate {
      * @param shellOutputPath
      * @param sourceCopyDestPath
      */
-    protected void buildDist(String outputPath, String jarPath, String shellOutputPath, String sourceCopyDestPath) {
+    protected String buildDist(String outputPath, String jarPath, String shellOutputPath, String sourceCopyDestPath) {
         // 生成精简版 -dist
         String distOutputPath = outputPath + "-dist";
         // 拷贝 jar 包
@@ -170,5 +171,18 @@ public abstract class GenerateTemplate {
         FileUtil.copy(shellOutputPath + ".bat", distOutputPath, true);
         // 拷贝源模板文件
         FileUtil.copy(sourceCopyDestPath, distOutputPath, true);
+        return distOutputPath;
+    }
+
+    /**
+     * 制作压缩包
+     *
+     * @param outputPath 传入需要压缩的路径
+     * @return 压缩包路径
+     */
+    protected String buildZip(String outputPath) {
+        String zipPath = outputPath + ".zip";
+        ZipUtil.zip(outputPath, zipPath);
+        return zipPath;
     }
 }
